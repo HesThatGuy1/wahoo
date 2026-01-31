@@ -219,17 +219,17 @@ msm8998_v1_rev0_mmss_fuse_ref_volt[MSM8996_MMSS_FUSE_CORNERS] = {
 
 static const int msm8998_v2_mmss_fuse_ref_volt[MSM8996_MMSS_FUSE_CORNERS] = {
 	516000,
-	628000,
-	752000,
-	924000,
+	536000,
+	640000,
+	724000,
 };
 
 static const int
 msm8998_v2_rev0_mmss_fuse_ref_volt[MSM8996_MMSS_FUSE_CORNERS] = {
-	616000,
-	740000,
-	828000,
-	1024000,
+	516000,
+	536000,
+	640000,
+	724000,
 };
 
 #define MSM8996_MMSS_FUSE_STEP_VOLT		10000

@@ -33,7 +33,7 @@
 
 #define EXITING_TASK_MARKER	0xdeaddead
 
-static __read_mostly unsigned int walt_ravg_hist_size = 3;
+static __read_mostly unsigned int walt_ravg_hist_size = 4;
 static __read_mostly unsigned int walt_window_stats_policy =
 	WINDOW_STATS_AVG;
 static __read_mostly unsigned int walt_account_wait_time = 1;
@@ -68,8 +68,8 @@ static unsigned int max_possible_capacity = 1024;
 /* Mask of all CPUs that have  max_possible_capacity */
 static cpumask_t mpc_mask = CPU_MASK_ALL;
 
-/* Window size (in ns) = 5.55ms */
-__read_mostly unsigned int walt_ravg_window = 5555555;
+/* Window size (in ns) = 4ms */
+__read_mostly unsigned int walt_ravg_window = 4000000;
 
 /* Min window size (in ns) = 1ms */
 #ifdef CONFIG_HZ_300
@@ -82,8 +82,8 @@ __read_mostly unsigned int walt_ravg_window = 5555555;
 #define MIN_SCHED_RAVG_WINDOW 1000000
 #endif
 
-/* Max window size (in ns) = 16.66ms */
-#define MAX_SCHED_RAVG_WINDOW 16666665
+/* Max window size (in ns) = 16ms */
+#define MAX_SCHED_RAVG_WINDOW 16000000
 
 static unsigned int sync_cpu;
 static ktime_t ktime_last;
